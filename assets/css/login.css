@@ -6,7 +6,8 @@
 }
 
 .container__form {
-  width: 750px;
+  width: 100%;
+  max-width: 750px;
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -32,23 +33,28 @@
 }
 
 .container__form input {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   padding: 10px;
   outline: 1px solid #181818;
 }
 
 .container__form button {
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   padding: 10px;
-  cursor: pointer;
-  border: 1px solid #181818;
+  font-weight: 700;
+  letter-spacing: 2px;
   color: #fff;
-  background-color: #444;
+  background-color: #ee665c;
   transition: background-color 0.5s;
+  cursor: pointer;
 }
 
-.container__form button:hover {
-  background-color: #181818;
+.container__form button:disabled {
+  background-color: #ccc;
+  color: #999;
+  cursor: auto;
 }
 
 .login__header {
@@ -60,8 +66,8 @@
 }
 
 .login__header img {
-  max-width: 300px;
   width: 100%;
+  max-width: 300px;
 }
 
 .login__header h1 {
