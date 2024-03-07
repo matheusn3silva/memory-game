@@ -88,11 +88,22 @@ header {
   gap: 80px;
   font-family: arial, sans-serif;
   background-color: #f0f8ff;
-  border: 1px solid #181818;
+  border: 4px solid #181818;
+  border-radius: 8px;
 }
 
 #winModal::backdrop {
   background-color: #181818b9;
+}
+
+#winModal span,
+#winModal p {
+  font-family: arial, sans-serif;
+}
+
+#winModal p {
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .modal__container {

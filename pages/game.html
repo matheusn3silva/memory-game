@@ -17,7 +17,7 @@
     <div class="container">
       <header>
         <span class="player"></span>
-        <span>Tempo: <span class="timer">00</span></span>
+        <span>Tempo: <span class="timer">00:00</span></span>
       </header>
 
       <!-- GRID GAME -->
@@ -25,7 +25,8 @@
     </div>
     <dialog id="winModal">
       <div class="modal__container">
-        <h1>Parabéns, você venceu!!!</h1>
+        <h1>Parabéns <span class="winner"></span>, você venceu!!!</h1>
+        <p>Seu tempo foi: <span class="time-winner"></span></p>
         <button class="play__again">Jogar Novamente</button>
       </div>
     </dialog>

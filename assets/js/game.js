@@ -1,5 +1,7 @@
 const grid = document.querySelector(".grid");
 const player = document.querySelector(".player");
+const winner = document.querySelector(".winner");
+const timeWinner = document.querySelector(".time-winner");
 const timer = document.querySelector(".timer");
 const modalWin = document.querySelector("#winModal");
 const playAgainButton = document.querySelector(".play__again");
@@ -36,6 +38,8 @@ let firstCard = "";
 let secondCard = "";
 
 const openModal = () => {
+  winner.innerText = player.innerHTML;
+  timeWinner.innerText = timer.innerHTML;
   modalWin.showModal();
 };
 
@@ -118,8 +122,20 @@ const loadGame = () => {
 
 const startTime = () => {
   this.loop = setInterval(() => {
-    const currentTime = Number(timer.innerHTML);
-    timer.innerHTML = currentTime + 1;
+    let seconds = Number(timer.innerHTML.split(":")[1]);
+    let minutes = Number(timer.innerHTML.split(":")[0]);
+
+    seconds += 1;
+
+    if (seconds === 60) {
+      minutes += 1;
+      seconds = 0;
+    }
+
+    const formatedMinutes = minutes < 10 ? `0${minutes}` : minutes;
+    const formatedSeconds = seconds < 10 ? `0${seconds}` : seconds;
+
+    timer.innerHTML = `${formatedMinutes}:${formatedSeconds}`;
   }, 1000);
 };
 
