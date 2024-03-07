@@ -10,7 +10,8 @@ playAgainButton.addEventListener("click", () => {
   grid.innerHTML = "";
   loadGame();
   modalWin.close();
-  timer.innerText = "00";
+  timer.innerText = "00:00";
+  startTime()
 });
 
 const animals = [

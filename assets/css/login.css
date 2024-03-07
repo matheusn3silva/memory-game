@@ -77,3 +77,27 @@
   font-size: clamp(1rem, 1.5rem, 1.8rem);
   letter-spacing: 3px;
 }
+
+footer {
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to right, #fdfeff, #ddeffb);
+}
+
+footer p:first-child {
+  margin-bottom: 10px;
+}
+
+footer p,
+a {
+  font-family: Arial, sans-serif;
+  color: #8f8f8f;
+}
+
+footer a {
+  transition: all 0.5s;
+}
+
+footer a:hover {
+  color: #181818;
+}
