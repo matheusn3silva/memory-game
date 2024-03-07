@@ -3,7 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/game.css" />
+
+    <!-- JS -->
+    <script defer src="../assets/js/game.js"></script>
+
     <title>Jogo da Memória</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header>
+        <span class="player"></span>
+        <span>Tempo: <span class="timer">00</span></span>
+      </header>
+
+      <!-- GRID GAME -->
+      <div class="grid"></div>
+    </div>
+    <dialog id="winModal">
+      <div class="modal__container">
+        <h1>Parabéns, você venceu!!!</h1>
+        <button class="play__again">Jogar Novamente</button>
+      </div>
+    </dialog>
+  </body>
 </html>

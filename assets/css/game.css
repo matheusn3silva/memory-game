@@ -1,0 +1,157 @@
+.container {
+  width: 100%;
+  min-height: 100dvh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+header {
+  width: 100%;
+  max-width: 800px;
+  padding: 45px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 2px;
+  background-color: #f0f0f0d0;
+  box-shadow: 0 3px 8px #181818a2;
+}
+
+.grid {
+  width: 100%;
+  max-width: 800px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  background-color: #f0f0f0d0;
+  box-shadow: 0 3px 8px #181818a2;
+}
+
+.card {
+  aspect-ratio: 1/1;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 3px 10px #181818ce;
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 2px;
+}
+
+.front {
+  transform: rotateY(180deg);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  border: 3px solid aliceblue;
+  background-color: #181818;
+  backface-visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.back:hover {
+  border-color: rgb(255, 115, 0);
+  color: rgb(255, 115, 0);
+}
+
+.reveal {
+  transform: rotateY(180deg);
+}
+
+.disabled-card {
+  filter: saturate(0);
+  opacity: 0.5;
+}
+
+#winModal {
+  padding: 80px;
+  margin: auto;
+  gap: 80px;
+  font-family: arial, sans-serif;
+  background-color: #f0f8ff;
+  border: 1px solid #181818;
+}
+
+#winModal::backdrop {
+  background-color: #181818b9;
+}
+
+.modal__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.modal__container h1 {
+  font-family: arial, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.play__again {
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  margin: 0 auto;
+  color: #fff;
+  font-family: arial, sans-serif;
+  font-size: 1.3rem;
+  background-color: #ee665c;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+#winModal button:hover {
+  background-color: #ec4e43;
+}
+
+@media screen and (max-width: 960px) {
+  header {
+    font-size: 1.4rem;
+  }
+
+  .back {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .back {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .back {
+    font-size: 1.6rem;
+  }
+}

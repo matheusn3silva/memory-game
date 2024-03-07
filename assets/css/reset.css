@@ -18,3 +18,17 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media screen and (max-width: 960px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html,
+  body {
+    font-size: 8px;
+  }
+}
