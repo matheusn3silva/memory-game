@@ -18,6 +18,13 @@ header {
   border-radius: 2px;
   background-color: #f0f0f0d0;
   box-shadow: 0 3px 8px #181818a2;
+  word-break: break-all;
+}
+
+.player {
+  max-width: 300px;
+  text-transform: capitalize;
+  line-height: 22px;
 }
 
 .grid {
@@ -170,6 +177,11 @@ header {
 }
 
 @media screen and (max-width: 400px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .back {
     font-size: 1.6rem;
   }

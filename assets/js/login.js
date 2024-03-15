@@ -3,9 +3,11 @@ const button = document.querySelector(".login__button");
 const form = document.querySelector(".login__form");
 
 const validateInput = ({ target }) => {
-  target.value.length > 3
-    ? button.removeAttribute("disabled")
-    : button.setAttribute("disabled", "");
+  if (target.value.length < 4 || target.value.length > 16) {
+    button.setAttribute("disabled", "");
+  } else {
+    button.removeAttribute("disabled");
+  }
 };
 
 const handleSubmit = (event) => {
