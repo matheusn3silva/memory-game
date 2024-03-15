@@ -8,6 +8,7 @@
   border: none;
   outline: none;
   font-family: "Press Start 2P", system-ui;
+  transition: all 0.4s ease;
 }
 
 body {

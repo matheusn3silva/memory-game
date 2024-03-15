@@ -44,7 +44,6 @@ header {
   position: relative;
   cursor: pointer;
   box-shadow: 0 3px 10px #181818ce;
-  transition: all 0.4s ease;
   transform-style: preserve-3d;
 }
 
@@ -59,7 +58,6 @@ header {
   transform: rotateY(180deg);
   background-size: cover;
   background-position: center;
-  transition: all 0.4s ease;
 }
 
 .back {
@@ -72,7 +70,6 @@ header {
   border: 3px solid aliceblue;
   background-color: #181818;
   backface-visibility: hidden;
-  transition: all 0.4s ease;
 }
 
 .back:hover {
@@ -145,7 +142,6 @@ header {
   background-color: #ee665c;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.4s ease;
 }
 
 #winModal button:hover {

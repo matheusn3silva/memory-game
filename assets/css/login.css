@@ -19,7 +19,6 @@
   border: 2px solid #808080;
   background-color: #f0f0f0d0;
   box-shadow: 0 3px 8px #181818a2;
-  transition: border-color 0.5s;
 }
 
 .container__form:hover {
@@ -92,10 +91,6 @@ footer p,
 a {
   font-family: Arial, sans-serif;
   color: #8f8f8f;
-}
-
-footer a {
-  transition: all 0.5s;
 }
 
 footer a:hover {
